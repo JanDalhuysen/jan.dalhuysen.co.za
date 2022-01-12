@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Internet Enthusiast" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>About</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      class App extends React.Component {
+        render() {
+          const text = [
+            "Name: Jan",
+            <br />,
+            <br />,
+            "Surname: Dalhuysen",
+            <br />,
+            <br />,
+            "Date of Birth: 2005-02-02",
+            <br />,
+            <br />,
+            "Place of Birth: South Africa",
+          ];
+          return (
+            <div>
+              <div className="bg-gray-900 cursor-crosshair">
+                <div className="flex items-center justify-center py-6 cursor-crosshair">
+                  <a
+                    href="https://jan.dalhuysen.co.za"
+                    className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:scale-125"
+                  >
+                    Home
+                  </a>
+                  <a
+                    href="about.html"
+                    className="font-mono font-family: consolas text-white px-6 cursor-crosshair"
+                  >
+                    About
+                  </a>
+                  <a
+                    href="explore.html"
+                    className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:scale-125"
+                  >
+                    Explore
+                  </a>
+                  <a
+                    href="blog.html"
+                    className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:scale-125"
+                  >
+                    Blog
+                  </a>
+                  <a
+                    href="contact.html"
+                    className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:scale-125"
+                  >
+                    Contact
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-center bg-gray-800 py-64 cursor-crosshair resize">
+                <div className="flex items-center border-lg bg-gray-900 cursor-crosshair">
+                  <div className="flex border-lg bg-gray-800 px-2 py-2 mr-2 ml-2 cursor-crosshair hover:-translate-y-2">
+                    <a
+                      href="https://jan.dalhuysen.co.za/IMG_8887-04.jpeg"
+                      target="_blank"
+                    >
+                      <img
+                        src="IMG_8887-04.jpeg"
+                        height="300"
+                        width="200"
+                        src={"IMG_8887-04.jpeg"}
+                      />
+                    </a>
+                  </div>
+                  <div className="flex border-lg">
+                    <p className="text-blue-300 px-8 select-all">{text}</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gray-900 cursor-crosshair">
+                <div className="flex justify-center cursor-crosshair">
+                  <div className="flex items-center py-6 cursor-crosshair">
+                    <a
+                      href="https://youtube.com"
+                      target="_blank"
+                      className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:-translate-y-1"
+                    >
+                      YouTube
+                    </a>
+                    <a
+                      href="https://facebook.com/DalhuysenJan"
+                      target="_blank"
+                      className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:-translate-y-1"
+                    >
+                      Facebook
+                    </a>
+                    <a
+                      href="https://instagram.com/JanDalhuysen"
+                      target="_blank"
+                      className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:-translate-y-1"
+                    >
+                      Instagram
+                    </a>
+                    <a
+                      href="https://twitter.com/JanDalhuysen"
+                      target="_blank"
+                      className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:-translate-y-1"
+                    >
+                      Twitter
+                    </a>
+                    <a
+                      href="https://reddit.com/u/JanDalhuysen"
+                      target="_blank"
+                      className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:-translate-y-1"
+                    >
+                      Reddit
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        }
+      }
+      ReactDOM.render(<App />, document.getElementById("app"));
+    </script>
+  </body>
+</html>
