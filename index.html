@@ -19,48 +19,44 @@
   <body>
     <div id="app"></div>
     <script type="text/babel">
-      function Header() {
-        return (
-          <div className="bg-gray-900 cursor-crosshair">
-            <div className="flex items-center justify-center py-6 cursor-crosshair">
-              <a
-                href="https://jan.dalhuysen.co.za"
-                className="font-mono font-family: consolas text-white px-6 cursor-crosshair"
-              >
-                Home
-              </a>
-              <a
-                href="about.html"
-                className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:scale-125"
-              >
-                About
-              </a>
-              <a
-                href="explore.html"
-                className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:scale-125"
-              >
-                Explore
-              </a>
-              <a
-                href="blog.html"
-                className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:scale-125"
-              >
-                Blog
-              </a>
-              <a
-                href="contact.html"
-                className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:scale-125"
-              >
-                Contact
-              </a>
-            </div>
-          </div>
-        );
-      }
-
-      function Body() {
+      function App() {
         return (
           <div>
+            <div className="bg-gray-900 cursor-crosshair">
+              <div className="flex items-center justify-center py-6 cursor-crosshair">
+                <a
+                  href="https://jan.dalhuysen.co.za"
+                  className="font-mono font-family: consolas text-white px-6 cursor-crosshair"
+                >
+                  Home
+                </a>
+                <a
+                  href="about.html"
+                  className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:scale-125"
+                >
+                  About
+                </a>
+                <a
+                  href="explore.html"
+                  className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:scale-125"
+                >
+                  Explore
+                </a>
+                <a
+                  href="blog.html"
+                  className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:scale-125"
+                >
+                  Blog
+                </a>
+                <a
+                  href="contact.html"
+                  className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:scale-125"
+                >
+                  Contact
+                </a>
+              </div>
+            </div>
+
             <div className="flex items-center justify-center bg-gray-800 py-10 cursor-crosshair">
               <div className="flex items-center border-lg max-w-xl bg-gray-900 cursor-crosshair">
                 <div className="flex border-lg bg-gray-800 px-2 py-2 mr-2 ml-2 cursor-crosshair hover:-translate-y-2">
@@ -241,66 +237,51 @@
                 </div>
               </div>
             </div>
-          </div>
-        );
-      }
 
-      function Footer() {
-        return (
-          <div className="bg-gray-900 cursor-crosshair">
-            <div className="flex justify-center cursor-crosshair">
-              <div className="flex items-center py-6 cursor-crosshair">
-                <a
-                  href="https://youtube.com"
-                  target="_blank"
-                  className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:-translate-y-1"
-                >
-                  YouTube
-                </a>
-                <a
-                  href="https://facebook.com/DalhuysenJan"
-                  target="_blank"
-                  className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:-translate-y-1"
-                >
-                  Facebook
-                </a>
-                <a
-                  href="https://instagram.com/JanDalhuysen"
-                  target="_blank"
-                  className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:-translate-y-1"
-                >
-                  Instagram
-                </a>
-                <a
-                  href="https://twitter.com/JanDalhuysen"
-                  target="_blank"
-                  className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:-translate-y-1"
-                >
-                  Twitter
-                </a>
-                <a
-                  href="https://reddit.com/u/JanDalhuysen"
-                  target="_blank"
-                  className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:-translate-y-1"
-                >
-                  Reddit
-                </a>
+            <div className="bg-gray-900 cursor-crosshair">
+              <div className="flex justify-center cursor-crosshair">
+                <div className="flex items-center py-6 cursor-crosshair">
+                  <a
+                    href="https://youtube.com"
+                    target="_blank"
+                    className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:-translate-y-1"
+                  >
+                    YouTube
+                  </a>
+                  <a
+                    href="https://facebook.com/DalhuysenJan"
+                    target="_blank"
+                    className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:-translate-y-1"
+                  >
+                    Facebook
+                  </a>
+                  <a
+                    href="https://instagram.com/JanDalhuysen"
+                    target="_blank"
+                    className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:-translate-y-1"
+                  >
+                    Instagram
+                  </a>
+                  <a
+                    href="https://twitter.com/JanDalhuysen"
+                    target="_blank"
+                    className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:-translate-y-1"
+                  >
+                    Twitter
+                  </a>
+                  <a
+                    href="https://reddit.com/u/JanDalhuysen"
+                    target="_blank"
+                    className="font-mono font-family: consolas text-blue-300 hover:text-white px-6 cursor-crosshair hover:-translate-y-1"
+                  >
+                    Reddit
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         );
       }
-
-      function App() {
-        return (
-          <div>
-            <Header />
-            <Body />
-            <Footer />
-          </div>
-        );
-      }
-
       ReactDOM.render(<App />, document.getElementById("app"));
     </script>
   </body>
